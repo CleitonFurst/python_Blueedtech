@@ -4,7 +4,6 @@ porcentagem e custo, que é o custo de um item antes do imposto. A função “a
 valor de custo para incluir o imposto sobre vendas'''
 
 
-
 def somaImposto(taxaImposto,custo):
 
     percentual =  taxaImposto/100

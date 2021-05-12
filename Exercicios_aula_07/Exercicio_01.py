@@ -2,7 +2,6 @@
 soma três três argumentos. '''
 
 
-
 def  soma ( x , y , z ):
     soma  =  x  +  y  +  z
     print ( f'A soma dos valores é igual á { soma } ' )

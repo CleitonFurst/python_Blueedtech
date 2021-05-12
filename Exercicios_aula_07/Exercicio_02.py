@@ -2,7 +2,6 @@
 o valor de caractere ‘P’, se seu argumento for positivo, ‘N’, se seu argumento for 
 negativo e ‘0’ se for 0'''
 
-
 def numero(n):
     if n > 0:
         return 'P'
