@@ -3,9 +3,8 @@
 
 frase = input('Digite uma frase:').lower()
 vogais = 'aeiou'
-for i in vogais:
-    frase = frase.replace(i, ' ')
-    
+for i in vogais:    
+    frase = frase.replace(i, 'f')
 print(frase)
 
 
