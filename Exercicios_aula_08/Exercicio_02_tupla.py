@@ -13,12 +13,15 @@ d = int(input('Digite o quarto valor :'))
 
 tupla = (a,b,c,d)
 soma = 0
+a  = 0 
 for i in tupla:
-    if i == 3:
+    if i == 9:
         soma += 1
+    elif i == 3 and a == 0 :
+        index = tupla.index(3)
+        a += 1
     else:
         continue
 
-index = tupla.index(3)
 print(f'O número 9 aparece {soma}')
 print(f'O primeiro 3 foi digitado na posição {index}')
