@@ -15,7 +15,7 @@ for letra in frase:
         e += 1
     elif letra == 'i':
         i += 1
-    elif letra =='o':
+    elif letra == 'o':
         o += 1
     elif letra == 'u':
         u += 1
