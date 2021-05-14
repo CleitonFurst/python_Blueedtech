@@ -5,7 +5,6 @@
 '''
 from random import randint
 
-
 lista = list()
 for i in range(0,6):
     aux = randint(1,60)    
