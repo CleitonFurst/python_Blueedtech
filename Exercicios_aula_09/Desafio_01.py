@@ -5,8 +5,8 @@ Exemplo: 3025 = 55 e 55**2 é igual á 3025'''
 
 from random import randint
 
-for i in range(0,10000):
-    aux = str(randint(1000,10000))#gera um número aleatório 
+for i in range(1000,10000):
+    aux = str(i)
     aux2 = int(aux[:2])
     aux3 = int(aux[2:])
     if (aux2 + aux3)**2 == int(aux):
