@@ -17,10 +17,8 @@ print('Responda Sim ou Não para as perguntas perguntas a seguir ')
 sim = 0
 nao = 0
 
-cont = len(lista)
 for i in lista:
-    if cont == 0:
-        break
+    
     resposta = input(f'{i}').upper().strip()
     if resposta == 'SIM':
         sim += 1
@@ -31,7 +29,7 @@ for i in lista:
     else:
         print(f'A resposta {resposta} é invalida !!!')
         break
-    cont -= 1
+   
 if sim == 2:
     print('Pessoa classifica como suspeita !!!')
 elif sim == 3 or sim == 4:
