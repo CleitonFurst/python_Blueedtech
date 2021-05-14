@@ -16,30 +16,31 @@ lista = ['Telefonou para a vítima?(sim/Não) :','Esteve no local do crime?(sim/
 print('Responda Sim ou Não para as perguntas perguntas a seguir ')
 sim = 0
 nao = 0
-while True:
-    cont = len(lista)
-    for i in lista:
-        if cont == 0:
-            break
-        resposta = input(f'{i}').upper()
-        if resposta == 'SIM':
-            sim += 1
-        elif resposta == 'NÃO' or resposta == 'NAO':
-            nao += 1
-        elif resposta != 'SIM' or resposta != 'NÃO' :
-            break
-        else:
-            print(f'A resposta {resposta} é invalida !!!')
-            break
-        cont -= 1
-    if sim == 2:
-        print('Pessoa classifica como suspeita !!!')
-    elif sim == 3 or sim == 4:
-        print('Pessoa classificada como Cúmplice !!! ')
-    elif sim == 5:
-        print('Pessoa classificada como Assassino !!! ')
+
+cont = len(lista)
+for i in lista:
+    if cont == 0:
+        break
+    resposta = input(f'{i}').upper().strip()
+    if resposta == 'SIM':
+        sim += 1
+    elif resposta == 'NÃO' or resposta == 'NAO':
+        nao += 1
+    elif resposta != 'SIM' or resposta != 'NÃO' :
+        break
     else:
-        if resposta == 'SIM' or resposta == 'NÂO' or resposta == 'NAO':    
-            print('Pessoa classificada como Inocente !!!')
-    break
+        print(f'A resposta {resposta} é invalida !!!')
+        break
+    cont -= 1
+if sim == 2:
+    print('Pessoa classifica como suspeita !!!')
+elif sim == 3 or sim == 4:
+    print('Pessoa classificada como Cúmplice !!! ')
+elif sim == 5:
+    print('Pessoa classificada como Assassino !!! ')
+else:
+    if resposta == 'SIM' or resposta == 'NÂO' or resposta == 'NAO':    
+        print('Pessoa classificada como Inocente !!!')
+    else:
+        print('Voçê tem que responder só sim ou não !!!')
     
