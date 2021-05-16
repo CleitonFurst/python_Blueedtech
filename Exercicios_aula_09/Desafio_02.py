@@ -12,5 +12,3 @@ for i in range(0,num):
     media  = (media + lista[i])
 print(f'A média geral do aluno das {len(lista)} matérias com as notas {lista} será igual a {media/num}')
 
-print(lista)
- 

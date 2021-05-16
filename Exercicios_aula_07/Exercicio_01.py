@@ -1,14 +1,15 @@
-'''1. Faça um programa, com uma função que necessita de três argumentos, e que forneça a
-soma três três argumentos. '''
+'''Exercício Treino 1 - Escreva uma função que recebe dois parâmetros (números) e imprime o
+menor dos dois. Se eles forem iguais, imprima que são valores idênticos.'''
 
 
-def  soma ( x , y , z ):
-    soma  =  x  +  y  +  z
-    print ( f'A soma dos valores é igual á { soma } ' )
+def verefica_valor(valor1, valor2):
+    if valor1 == valor2:
+        print('Valores identicos !!')
+    else:
+        print(f'O menor valor é {max(valor1,valor2)}')
+    
 
+valor1 = int(input('Digite o priemiro valor :'))
+valor2 = int(input('Digite o segundo valor :'))
 
-valor1  =  float ( input ( 'Digite o primeiro valor:' ))
-valor2  =  float ( input ( 'Digite o seundo valor:' ))
-valor3  =  float ( input ( 'Digite o terceiro valor:' ))
-
-soma ( valor1 , valor2 , valor3 )
+verefica_valor(valor1, valor2)

@@ -14,4 +14,4 @@ lista = list(range(1,51))
 preco = float(input('Digite o preço do pão por unidade R$ '))
 
 for i in lista:
-    print(f'{i} -> R${(i*preco):.2f} ')
+    print(f'{i} -> R${(i * preco):.2f} ')
