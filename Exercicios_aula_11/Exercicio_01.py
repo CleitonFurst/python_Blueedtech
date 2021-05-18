@@ -16,7 +16,7 @@ while True:
     dados.append(str(input('Digite o nome da pessoa :')))
     dados.append(float(input('Digite a peso da pessoa :').replace(',','.')))
     if len(pessoas) == 0:
-        maior =  dados[1]
+        maior = dados[1]
         menor = dados[1]
     else:
         if dados[1] > maior:
