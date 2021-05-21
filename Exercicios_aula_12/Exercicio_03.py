@@ -22,11 +22,17 @@ for i in range(0,3):
          soma_c3 += matriz[i][j]
       if cont > 3 and cont < 6:
          aux.append(matriz[i][j])
-         maior = max(aux)
+         
       soma += matriz[i][j]
-      print(f'[ {matriz[i][j]} ]',end =' ' )
-    print(' ')
-
+      print(f'[ \t{matriz[i][j]} \t]',end =' ' )
+    print()
+    
+for c in range(0,3):
+   if c == 0:
+      maior = matriz[1][c]
+   elif matriz[1][c] > maior:
+      maior = matriz[1][c]
+   
 print(f'A soma de todos os elemntos da matriz é igual á {soma}')
 print(f'A soma dos valores da terceira coluna é igual a {soma_c3}')
 print(f'O maior valor da segunda linha {maior}')

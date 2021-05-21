@@ -19,7 +19,6 @@ while True:
     op = input('Deseja sair (S/N):').strip().upper()[0]
     if op == 'N':
         break
-
 print(f'{cont_m18} pessoas tem mais de 18 anos !!')
 print(f'{cont_h} homens foram cadastrados !!')
 print(f'{cont_M20} mulhere(s) com menos de 20 anos foram cadastradas !!!')
