@@ -17,4 +17,7 @@ dados['idade'] =  int(ano.year) - dados.get('anonac')
 if dados.get('carteira') == 0:
     print(f'Se o(a) {dados["nome"]} começar a trabalhar este ano ainda vai levar 35 anos, ai vai se apposentar com {dados["idade"] + 35} anos')
 else:
-    print(f'Como o(a) {dados["nome"]} começou a trabalhar no ano de {dados["anocont"]} e atualamente tem {dados["idade"]} vai se aposentar com {dados["idade"] + 35} anos de idade com 35 anos de contribuição')
+    trabalhados =  int(ano.year) - dados.get('anocont')
+    print(trabalhados)
+    print(f'Como o(a) {dados["nome"]} começou a trabalhar no ano de {dados["anocont"]}'
+          ' e atualamente tem {dados["idade"]} vai se aposentar com {dados["idade"] + 35 - trabalhados} anos de idade com 35 anos de contribuição')
