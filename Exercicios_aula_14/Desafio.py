@@ -18,20 +18,19 @@ while True:
     dados['idade'] = int(input('Digite a idade :'))
     cadastros.append(dados.copy())
     op = str(input('deseja continual (S/N)').strip().upper()[0])
-    if op == 'N': 
-        break    
+    if op == 'N':
+        break
 for i in cadastros:
     soma += i['idade']
 media = soma / len(cadastros)
 print(media)
 for i in cadastros:
-    if i.get('sexo') == 'F': 
-        mulheres.append(i['nome'])        
+    if i.get('sexo') == 'F':
+        mulheres.append(i['nome'])
 for i in cadastros:
     if i.get('idade') > media:
-        acimamedia.append(i['idade']) 
-print(f'Números de pessoas que estão cadastradas -> {len(cadastros)}')  
-print(f'A média das idades -> {media}')   
-print(f'lista com as mulheres -> {mulheres}')        
+        acimamedia.append(i['idade'])
+print(f'Números de pessoas que estão cadastradas -> {len(cadastros)}')
+print(f'A média das idades -> {media}')
+print(f'lista com as mulheres -> {mulheres}')
 print(f'Idades que estão acima da média -> {acimamedia}')
-
